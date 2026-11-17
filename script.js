@@ -42,8 +42,11 @@
     playMusic();
   });
 
+  let isReturning = false;
   backButton.addEventListener("click", () => {
-    cover.classList.remove("is-finished");
+    if (isReturning || cover.classList.contains("is-closing")) return;
+    isReturning = true;
+    cover.classList.remove("is-finished", "is-opening");
     cover.classList.add("is-returning");
     page.classList.remove("is-visible");
     page.setAttribute("inert", "");
@@ -54,8 +57,11 @@
       cover.classList.remove("is-returning", "is-closing", "is-open");
       cover.classList.add("is-opening");
       openButton.focus({ preventScroll: true });
-      window.setTimeout(() => cover.classList.remove("is-opening"), 50);
-    }, 1050);
+      window.setTimeout(() => {
+        cover.classList.remove("is-opening");
+        isReturning = false;
+      }, 50);
+    }, 1100);
   });
 
   nextButton.addEventListener("click", () => {
