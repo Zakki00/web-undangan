@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#fbf7ee" />
+    <meta
+      name="description"
+      content="Undangan pernikahan Ahmad Fauzan dan Siti Aisyah. Sabtu, 20 Desember 2026 di Gresik."
+    />
+    <meta
+      property="og:title"
+      content="Ahmad Fauzan & Siti Aisyah — Undangan Pernikahan"
+    />
+    <meta
+      property="og:description"
+      content="Dengan penuh syukur, kami mengundang Anda untuk merayakan hari pernikahan kami."
+    />
+    <meta property="og:image" content="assets/fauzan-aisyah.jpg" />
+    <title>Ahmad Fauzan & Siti Aisyah — Undangan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="is-locked">
+    <div class="cover" id="cover" aria-label="Sampul undangan">
+      <div class="cover-inner">
+        <div class="cover-content">
+          <div class="cover-top">
+            <span class="bismillah">وَلِيمَةُ الْعُرْسِ</span
+            ><span class="cover-rule"></span>
+            <p>UNDANGAN PERNIKAHAN</p>
+          </div>
+          <h1 class="cover-names">
+            <span>Fauzan</span><i>&amp;</i><span>Aisyah</span>
+          </h1>
+          <div class="cover-portrait">
+            <img
+              src="assets/fauzan-aisyah.jpg"
+              alt="Foto Ahmad Fauzan dan Siti Aisyah"
+            />
+          </div>
+          <div class="cover-flower cover-flower-left" aria-hidden="true">❧</div>
+          <div class="cover-flower cover-flower-right" aria-hidden="true">
+            ❧
+          </div>
+          <div class="guest-card">
+            <span>Kepada Yth. Bapak/Ibu/Saudara/i</span
+            ><strong id="guest-name">Nama Tamu Undangan</strong
+            ><em>di tempat</em>
+          </div>
+          <button class="open-button" id="open-invitation" type="button">
+            Buka Undangan
+          </button>
+          <span class="cover-date">20 · 12 · 2026</span>
+        </div>
+      </div>
+      <div class="back-page-sheet" aria-hidden="true">
+        <div class="back-page-note">
+        <img class="back-page-flower" src="assets/bunga%20(1).svg" alt="" />
+        <span class="back-page-kicker">Sebuah hari istimewa</span>
+        <p class="back-page-title">Dengan penuh syukur</p>
+        <span class="back-page-rule"></span>
+        <p class="back-page-copy">
+          Kami mengundang Anda untuk menjadi bagian dari hari bahagia kami.
+        </p>
+        <span class="back-page-couple"
+          >Ahmad Fauzan <i>&amp;</i> Siti Aisyah</span
+        >
+        <span class="back-page-date">20 Desember 2026 · Gresik</span>
+        <img class="back-page-divider" src="assets/Garis%20Ornamen.svg" alt="" />
+        </div>
+      </div>
+      <button
+        class="back-button arrow-button"
+        id="back-page"
+        type="button"
+        aria-label="Kembali ke sampul"
+      >
+        <img src="assets/Anak%20Panah%20(1).svg" alt="" />
+      </button>
+      <button
+        class="next-button arrow-button"
+        id="next-page"
+        type="button"
+        aria-label="Lanjut ke undangan"
+      >
+        <img src="assets/Anak%20Panah%20(1).svg" alt="" />
+      </button>
+    </div>
+    <audio
+      id="background-music"
+      src="Audio/Banda Neira - Sampai Jadi Debu - Peaceful Piano - (64 Kbps).mp3"
+      loop
+      preload="none"
+    ></audio>
+    <main id="invitation" class="invitation" aria-hidden="true" inert>
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Kembali ke awal"
+          >F <span>&amp;</span> A</a
+        ><span class="topbar-date">20 Desember 2026 · Gresik</span
+        ><button
+          id="music-toggle"
+          class="music-toggle"
+          type="button"
+          aria-label="Putar musik"
+          aria-pressed="false"
+          title="Musik mati"
+        >
+          <span class="music-bars" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          ><span id="music-label">Musik</span>
+        </button>
+      </header>
+      <section class="hero section-frame" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Bismillāhirraḥmānirraḥīm</p>
+          <h1>Ahmad Fauzan<br /><span>&amp;</span><br />Siti Aisyah</h1>
+          <p class="hero-intro">
+            Dua perjalanan, satu tujuan, dan hari yang ingin kami rayakan
+            bersama orang-orang terkasih.
+          </p>
+          <a class="text-link" href="#mempelai"
+            >Kenali kami <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="assets/fauzan-aisyah.jpg"
+            alt="Ahmad Fauzan dan Siti Aisyah mengenakan busana pengantin di taman"
+            fetchpriority="high"
+          /><span class="photo-caption">Dengan penuh syukur</span>
+        </div>
+        <a
+          class="scroll-note"
+          href="#mempelai"
+          aria-label="Gulir ke bagian mempelai"
+          ><span></span>Gulir untuk membaca</a
+        >
+      </section>
+      <section class="welcome section-frame" id="mempelai">
+        <div class="welcome-content">
+          <p class="eyebrow">Assalāmu‘alaikum warahmatullāhi wabarakātuh</p>
+          <h2>Sebuah awal<br />yang kami syukuri.</h2>
+          <p class="body-copy">
+            Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud
+            menyelenggarakan pernikahan putra-putri kami:
+          </p>
+          <div class="couple-grid">
+            <article class="person">
+              <span class="person-role">Putra dari</span>
+              <h3>Ahmad Fauzan</h3>
+              <p>Bapak Hasan<br />&amp; Ibu Fatimah</p>
+            </article>
+            <span class="ampersand" aria-hidden="true">&amp;</span>
+            <article class="person">
+              <span class="person-role">Putri dari</span>
+              <h3>Siti Aisyah</h3>
+              <p>Bapak Umar<br />&amp; Ibu Khadijah</p>
+            </article>
+          </div>
+          <p class="welcome-foot">
+            Merupakan kehormatan dan kebahagiaan bagi kami apabila
+            Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+          </p>
+        </div>
+        <div class="welcome-ornament" aria-hidden="true">❧</div>
+      </section>
+      <section class="events section-frame" id="acara">
+        <div class="events-heading">
+          <div>
+            <p class="eyebrow">Catat tanggalnya</p>
+            <h2>Waktu &amp; Tempat</h2>
+          </div>
+          <p class="events-date">
+            Sabtu<br /><strong>20</strong> Desember 2026
+          </p>
+        </div>
+        <div class="event-list">
+          <article class="event">
+            <span class="event-index">A</span>
+            <div class="event-info">
+              <p class="event-type">Akad Nikah</p>
+              <h3>Awal dari selamanya.</h3>
+              <p class="event-detail">Sabtu, 20 Desember 2026<br />08.00 WIB</p>
+              <p class="event-venue">Masjid Al-Ikhlas</p>
+            </div>
+            <a
+              class="map-link"
+              href="https://maps.google.com/?q=Masjid+Al-Ikhlas+Gresik"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lihat peta <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="event">
+            <span class="event-index">B</span>
+            <div class="event-info">
+              <p class="event-type">Resepsi</p>
+              <h3>Merayakan bersama.</h3>
+              <p class="event-detail">Sabtu, 20 Desember 2026<br />11.00 WIB</p>
+              <p class="event-venue">
+                Gedung Serbaguna<br />Jl. Contoh No. 1, Gresik, Jawa Timur
+              </p>
+            </div>
+            <a
+              class="map-link"
+              href="https://maps.google.com/?q=Gedung+Serbaguna+Gresik"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lihat peta <span aria-hidden="true">↗</span></a
+            >
+          </article>
+        </div>
+        <div class="countdown-wrap">
+          <p class="eyebrow">Menghitung hari menuju kebersamaan</p>
+          <div
+            class="countdown"
+            id="countdown"
+            aria-label="Hitung mundur menuju pernikahan"
+          >
+            <div><strong id="days">—</strong><span>Hari</span></div>
+            <div><strong id="hours">—</strong><span>Jam</span></div>
+            <div><strong id="minutes">—</strong><span>Menit</span></div>
+            <div><strong id="seconds">—</strong><span>Detik</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="verse section-frame" id="doa">
+        <div class="verse-flower" aria-hidden="true">✳</div>
+        <p class="eyebrow">Ayat suci Al-Qur’an</p>
+        <h2 lang="ar" dir="rtl">
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً
+          وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+        </h2>
+        <blockquote>
+          “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+          pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+          dan merasa tenteram kepadanya, dan Dia menjadikan di antara kamu rasa
+          kasih dan sayang.”
+        </blockquote>
+        <cite>QS. Ar-Rum: 21</cite>
+      </section>
+      <section class="gift section-frame" id="amplop">
+        <div class="gift-intro">
+          <p class="eyebrow">Tanda kasih</p>
+          <h2>Amplop Digital</h2>
+          <p>
+            Doa restu Anda adalah hadiah terbaik. Bila berkenan memberi tanda
+            kasih, dapat melalui:
+          </p>
+        </div>
+        <div class="account-list">
+          <article class="account">
+            <span class="account-bank">BSI</span><strong>1234567890</strong
+            ><span class="account-owner">a.n. Ahmad Fauzan</span
+            ><button class="copy-button" type="button" data-copy="1234567890">
+              Salin nomor
+            </button>
+          </article>
+          <article class="account">
+            <span class="account-bank">BCA</span><strong>0987654321</strong
+            ><span class="account-owner">a.n. Siti Aisyah</span
+            ><button class="copy-button" type="button" data-copy="0987654321">
+              Salin nomor
+            </button>
+          </article>
+        </div>
+        <p
+          class="copy-status"
+          id="copy-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </section>
+      <footer class="closing section-frame" id="penutup">
+        <div class="closing-flourish" aria-hidden="true">❧</div>
+        <p class="eyebrow">Dengan cinta dan doa</p>
+        <p class="closing-copy">
+          Terima kasih atas doa dan kehadiran Bapak/Ibu/Saudara/i. Semoga Allah
+          SWT membalas segala kebaikan dan memberkahi kita semua.
+        </p>
+        <h2>Ahmad Fauzan <span>&amp;</span><br />Siti Aisyah</h2>
+        <p class="farewell" lang="ar" dir="rtl">
+          وَالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ
+        </p>
+        <span class="closing-date">20 · 12 · 2026</span>
+      </footer>
+      <nav class="bottom-nav" aria-label="Navigasi undangan">
+        <a href="#mempelai">Mempelai</a><a href="#acara">Acara</a
+        ><a href="#amplop">Amplop</a>
+      </nav>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
